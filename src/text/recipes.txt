@@ -1,0 +1,30 @@
+name,description,servings,instructions,category_id
+"Arugula Salad with Pears and Walnuts","- Fresh arugula base\n- Sweet pears and crunchy walnuts\n- Light vinaigrette dressing",2,"1. Wash and dry the arugula.\n2. Slice pears thinly and chop walnuts.\n3. Toss together with vinaigrette.","2995757b-297b-46d0-81b4-3e6d85a6cb16"
+"Curry Roasted Cauliflower Salad","- Spiced roasted cauliflower\n- Mixed greens\n- Tangy curry dressing",4,"1. Preheat oven to 400°F.\n2. Toss cauliflower florets with curry powder and roast.\n3. Mix greens, roasted cauliflower, and dressing.","2995757b-297b-46d0-81b4-3e6d85a6cb16"
+
+"Apricot Porridge","- Creamy oat base\n- Sweet apricots\n- Nutty flavor from seeds",1,"1. Cook oats in water or plant milk.\n2. Add chopped apricots and seeds.\n3. Stir and serve warm.",29acd18c-c1aa-493a-8cab-9c94e9fcd46d
+"Walnut Date Loaf","- Moist loaf with dates and walnuts\n- Perfect for breakfast or snack\n- Gluten-free option available",6,"1. Preheat oven to 350°F.\n2. Mix flour, dates, walnuts, and wet ingredients.\n3. Bake in a loaf pan for 40 minutes.",29acd18c-c1aa-493a-8cab-9c94e9fcd46d
+
+"Stuffed Mushrooms","- Savory stuffed mushrooms\n- Garlic and herb filling\n- Great appetizer option",4,"1. Preheat oven to 375°F.\n2. Remove stems from mushrooms.\n3. Fill caps with garlic-herb mixture and bake.",404fe179-b3a3-4d77-a669-68965cf376c5
+"Sweet Potato Chickpea Quesadillas","- Creamy sweet potato filling\n- Protein-packed chickpeas\n- Quick and easy appetizer",2,"1. Mash cooked sweet potatoes with chickpeas.\n2. Spread mixture on tortillas.\n3. Cook in a skillet until golden.",404fe179-b3a3-4d77-a669-68965cf376c5
+
+"Classic Hummus","- Creamy chickpea dip\n- Garlic and lemon flavor\n- Perfect for dipping or spreading",8,"1. Blend chickpeas, tahini, garlic, lemon juice, and olive oil.\n2. Adjust seasoning to taste.\n3. Serve chilled.",5bbf3e59-3384-4601-bfca-6555314e1866
+"Tahini Sauce","- Rich sesame flavor\n- Versatile dipping sauce or dressing\n- Quick to prepare",6,"1. Mix tahini, lemon juice, garlic, and water.\n2. Whisk until smooth.\n3. Adjust consistency as needed.",5bbf3e59-3384-4601-bfca-6555314e1866
+
+"Green Smoothie","- Refreshing spinach base\n- Tropical fruit mix\n- Healthy beverage choice",1,"1. Blend spinach, banana, pineapple, and almond milk.\n2. Pour into a glass and serve immediately.",5ed3f4b0-54d8-4aaf-a55a-b768c3bf440e
+"Golden Turmeric Latte","- Warm spiced drink\n- Anti-inflammatory turmeric base\n- Comforting beverage",1,"1. Heat plant milk with turmeric, cinnamon, and ginger.\n2. Sweeten with maple syrup if desired.\n3. Serve warm.",5ed3f4b0-54d8-4aaf-a55a-b768c3bf440e
+
+"Garlic Mashed Potatoes","- Creamy mashed potatoes\n- Rich garlic flavor\n- Perfect side dish",4,"1. Boil potatoes until tender.\n2. Mash with roasted garlic, plant milk, and vegan butter.\n3. Season to taste.",837ee4d7-8ad1-447c-9546-04f8a4633d8f
+"Roasted Brussels Sprouts","- Crispy roasted sprouts\n- Light seasoning\n- Healthy side dish option",4,"1. Preheat oven to 400°F.\n2. Toss sprouts with olive oil, salt, and pepper.\n3. Roast until golden brown.",837ee4d7-8ad1-447c-9546-04f8a4633d8f
+
+"Mushroom Wild Rice Soup","- Earthy mushroom flavor\n- Hearty wild rice base\n- Comforting soup option",6,"1. Sauté mushrooms with onions and garlic.\n2. Add broth, wild rice, and seasonings.\n3. Simmer until rice is tender.",8c86d0b0-2af3-4000-a5f5-4943faaaed80
+"Lentil Vegetable Soup","- Protein-rich lentils\n- Seasonal vegetables\n- Flavorful broth base",8,"1. Sauté vegetables in olive oil.\n2. Add lentils, broth, and spices.\n3. Simmer until lentils are cooked.",8c86d0b0-2af3-4000-a5f5-4943faaaed80
+
+"Spicy Roasted Chickpeas","- Crispy chickpea snack\n- Bold spice mix\n- Easy to make",4,"1. Toss chickpeas with olive oil and spices.\n2. Roast at 400°F until crispy.\n3. Cool before serving.",a80e47d8-d395-4388-83a1-4523bcd59e05
+"Energy Balls","- Bite-sized snack option\n- Packed with nuts and dates\n- No-bake recipe",12,"1. Blend dates, nuts, seeds, and cocoa powder.\n2. Roll into balls.\n3. Chill before serving.",a80e47d8-d395-4388-83a1-4523bcd59e05
+
+"Chocolate Mousse","- Rich chocolate dessert\n- Silky texture from avocado base\n- Quick to prepare",4,"1. Blend avocado, cocoa powder, maple syrup, and plant milk until smooth.\n2. Chill before serving.",e51a5475-ecd1-433d-8262-eb6878ad3a6d
+"Berry Chia Pudding","- Creamy chia pudding base\n- Fresh berry topping\n- Healthy dessert option",4,"1. Mix chia seeds with plant milk and sweetener.\n2. Refrigerate overnight to thicken.\n3. Top with fresh berries before serving.",e51a5475-ecd1-433d-8262-eb6878ad3a6d
+
+"Lasagna","- Layered pasta dish\n- Rich tomato sauce base\n- Dairy-free cheese alternative",6,"1. Layer lasagna sheets with tomato sauce and vegan ricotta.\n2. Bake at 375°F for 40 minutes.\n3. Let cool before serving.",ea91e7cf-c31b-49c6-8a7d-867e8c1502ee
+"Thai Red Curry Vegetables","- Spicy coconut curry base\n- Seasonal vegetables mix\n- Served over rice or noodles",4,"1. Sauté vegetables in coconut oil.\n2. Add red curry paste and coconut milk.\n3. Simmer until vegetables are tender.",ea91e7cf-c31b-49c6-8a7d-867e8c1502ee

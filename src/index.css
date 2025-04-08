@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+    /* colors: */
+      --color-brown:#594336;
+      --color-d-brown:#362922;
+      --color-blue: #3F76DD;
+      --color-d-blue: #103374;
+      --color-lilac: #E1D7EF;
+      --color-d-lilac: #907AAF;
+      --color-butter: #F1EDBD;
+      --color-d-butter: #E5C669;
+
+      --color-bg: #ECF2FF;
+    }
+    
+    @font-face {
+      font-family: Outfit;
+      font-style: normal;
+      font-weight: 200 700;
+      src: url("../src/assets/fonts/Outfit-VariableFont_wght.ttf") format("woff2");
+    }
+  

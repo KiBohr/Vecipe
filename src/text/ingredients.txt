@@ -1,0 +1,79 @@
+name,quantity,unit,additional_info,recipe_id
+"Arugula",2,cups,"Fresh and peppery greens.", 99735104-3c3d-4af8-9ce5-fffb9291fc7f
+"Pears",1,medium,"Sweet and ripe.", 99735104-3c3d-4af8-9ce5-fffb9291fc7f
+"Walnuts",1/4,cup,"Crunchy and toasted.", 99735104-3c3d-4af8-9ce5-fffb9291fc7f
+
+"Cauliflower",1,head,"Cut into florets.", 40ce4200-2196-4048-a107-6f098baf4288
+"Curry Powder",2,tsp,"Adds bold flavor.", 40ce4200-2196-4048-a107-6f098baf4288
+"Olive Oil",2,tbsp,"For roasting.", 40ce4200-2196-4048-a107-6f098baf4288
+
+"Oats",1/2,cup,"Rolled or quick oats.", c76ab2a2-c306-4b56-b8b3-7d08556dee51
+"Almond Milk",1,cup,"Creamy plant-based milk.", c76ab2a2-c306-4b56-b8b3-7d08556dee51
+"Dried Apricots",1/4,cup,"Chopped for sweetness.", c76ab2a2-c306-4b56-b8b3-7d08556dee51
+
+"Walnuts",1/2,cup,"Chopped or crushed.",3a9d4c09-d7f7-4cf0-8e88-f6a853d8e99a
+"Dates",1,cup,"Pitted and chopped.",3a9d4c09-d7f7-4cf0-8e88-f6a853d8e99a
+"Flour",1 3/4,cups,"All-purpose or gluten-free.",3a9d4c09-d7f7-4cf0-8e88-f6a853d8e99a
+
+"Mushrooms",8,pieces,"Large button mushrooms.", ad9338d0-a071-4b81-9556-04a7c936a6d8
+"Garlic",2,cloves,"Minced for flavor.",ad9338d0-a071-4b81-9556-04a7c936a6d8
+"Herbs",1,tbsp,"Chopped parsley or thyme.",ad9338d0-a071-4b81-9556-04a7c936a6d8
+
+"Sweet Potatoes",1,medium,"Cooked and mashed.",09ced1ab-822d-44b1-aa37-841cd0da3462
+"Chickpeas",1/2,cup,"Canned or cooked.",09ced1ab-822d-44b1-aa37-841cd0da3462
+"Tortillas",2,pieces,"Soft flour or corn tortillas.",09ced1ab-822d-44b1-aa37-841cd0da3462
+
+"Chickpeas",1,cup,"Canned or cooked.",09d57591-6e8a-4a6d-b2ef-d7dcb97c9015
+"Tahini",2,tbsp,"Creamy sesame paste.",09d57591-6e8a-4a6d-b2ef-d7dcb97c9015
+"Lemon Juice",2,tbsp,"For tanginess.",09d57591-6e8a-4a6d-b2ef-d7dcb97c9015
+
+"Tahini",1/4,cup,"Rich sesame paste.",70f1c882-c3b9-45e0-9287-e98c3cec364f
+"Lemon Juice",2,tbsp,"Adds brightness to the sauce.",70f1c882-c3b9-45e0-9287-e98c3cec364f
+"Garlic",1,clove,"Minced for depth of flavor.",70f1c882-c3b9-45e0-9287-e98c3cec364f
+
+"Spinach",2,cups,"Fresh or frozen leaves.",e9feb21d-9ed3-42f8-ace2-da0045b376d1
+"Banana",1,medium,"Adds natural sweetness.",e9feb21d-9ed3-42f8-ace2-da0045b376d1
+"Almond Milk",1,cup,"Creamy liquid base.",e9feb21d-9ed3-42f8-ace2-da0045b376d1
+
+"Turmeric Powder",1,tsp,"Anti-inflammatory spice.",4bc808f8-e9a1-4f7c-b425-fe53b0f49a34
+"Cinnamon Powder",1/2,tsp,"Warm and aromatic.",4bc808f8-e9a1-4f7c-b425-fe53b0f49a34
+"Ginger Powder",1/4,tsp,"Adds a spicy kick.",4bc808f8-e9a1-4f7c-b425-fe53b0f49a34
+
+"Potatoes",4,medium,"Boiled and peeled.",e436bf5d-1335-4c90-bd02-4bd65a1e2403
+"Garlic",3,cloves,"Roasted for richness.",e436bf5d-1335-4c90-bd02-4bd65a1e2403
+"Vegan Butter",2,tbsp,"For creaminess.",e436bf5d-1335-4c90-bd02-4bd65a1e2403
+
+"Brussels Sprouts",3,cups,"Halved for even cooking.",bfda26d3-d453-46a9-9650-87d337377dc0
+"Olive Oil",2,tbsp,"For roasting evenly.",bfda26d3-d453-46a9-9650-87d337377dc0
+"Salt",1,tsp,"Season to taste.",bfda26d3-d453-46a9-9650-87d337377dc0
+
+"Mushrooms",2,cups,"Sliced for texture.",9b348c40-7ed7-421c-a05b-2d2698159348
+"Wild Rice",3/4,cup,"Nutty and hearty grains.",9b348c40-7ed7-421c-a05b-2d2698159348
+"Vegetable Broth",4,cups,"Base for the soup.",9b348c40-7ed7-421c-a05b-2d2698159348
+
+"Lentils",1,cup,"Protein-packed legumes.",1d464665-90c4-4f8d-af68-38e6ffe0dfed
+"Carrots",2,medium,"Chopped for sweetness.",1d464665-90c4-4f8d-af68-38e6ffe0dfed
+"Celery Stalks",3,pieces,"Adds crunch and flavor.",1d464665-90c4-4f8d-af68-38e6ffe0dfed
+
+"Chickpeas",2,cups,"Drained and rinsed well.",f9af9369-cf64-4842-a6d4-bcf219930699
+"Olive Oil",2,tbsp,"Helps spices stick evenly.",f9af9369-cf64-4842-a6d4-bcf219930699
+"Spices Mix (e.g., paprika)",1,tbsp,"For bold flavoring.",f9af9369-cf64-4842-a6d4-bcf219930699
+
+"Dates",1,cup,"Pitted for blending easily.",fcf7cd74-6314-46b7-a807-4e67e36db5a5
+"Nuts (e.g., almonds)",1/2,cup,"Adds crunch and nutrition.",fcf7cd74-6314-46b7-a807-4e67e36db5a5
+"Cocoa Powder",2,tbsp,"For a chocolatey taste boost.",fcf7cd74-6314-46b7-a807-4e67e36db5a5
+
+"Avocado (ripe)",2,pieces,"Creamy base ingredient.",b5638148-11c7-4ede-8486-9a26ffad0bdb
+"Cocoa Powder (unsweetened)",3,tbsp,"Rich chocolate flavoring agent!",b5638148-11c7-4ede-8486-9a26ffad0bdb
+"Chia Seeds",1,cup,"Nutritious and filling.",b5638148-11c7-4ede-8486-9a26ffad0bdb
+
+"Almond Milk",1,cup,"Creamy plant-based milk.",7543f099-b64b-45ac-bd2c-47392c45c1b6
+"Berries",1,cup,"Fresh or frozen.",7543f099-b64b-45ac-bd2c-47392c45c1b6
+"Lasagna Sheets",8,pieces,"Wide flat noodles.",7543f099-b64b-45ac-bd2c-47392c45c1b6
+
+"Tomato Sauce",2,cups,"Homemade or store-bought.",d5b42416-363d-4e99-b16d-56f7f1b268bf
+"Vegan Ricotta",1,cup,"Plant-based cheese alternative.",d5b42416-363d-4e99-b16d-56f7f1b268bf
+"Coconut Milk",1,cup,"Rich and creamy base.",d5b42416-363d-4e99-b16d-56f7f1b268bf
+
+"Red Curry Paste",2,tbsp,"Spicy and aromatic.",e1b6a6d0-19a3-444d-a963-c1ace471b874
+"Mixed Vegetables",2,cups,"Assorted seasonal vegetables.",e1b6a6d0-19a3-444d-a963-c1ace471b874
