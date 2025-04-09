@@ -2,11 +2,11 @@ import { IRecipes } from "../../contract/interfaces/fetchData";
 
 import RecipeItem from "../recipeItem/RecipeItem";
 
-interface recipeProps {
+interface IRecipeProps {
     recipes: IRecipes[]
 }
 
-const RecipeList = ({recipes} : recipeProps) => {
+const RecipeList = ({recipes} : IRecipeProps) => {
 
     if(!recipes){
         return <div>nö</div>

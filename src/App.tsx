@@ -6,6 +6,7 @@ import About from "./pages/about/About"
 import RecipeDetail from "./pages/recipeDetail/RecipeDetail"
 import CreateRecipe from "./pages/createRecipe/CreateRecipe"
 
+
 function App() {
   
   const router = createBrowserRouter(
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/details/:recipeParam" element={<RecipeDetail/>}/>
         <Route path="/create" element={<CreateRecipe/>}/>
+        {/* <Route path="/profile" element={<Profile/>}/> */}
       </Route>
     )
   )

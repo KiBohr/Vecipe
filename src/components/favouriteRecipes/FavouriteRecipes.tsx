@@ -1,21 +1,23 @@
-import { useContext } from "react";
-import { mainContext } from "../../context/MainProvider";
-import RecipeList from "../recipeList/RecipeList";
-import { RecipeContext } from "../../context/MainProvider";
+import { Link } from "react-router-dom";
+import { IRecipes } from "../../contract/interfaces/fetchData";
 
-const FavouriteRecipes = () => {
+interface IFavRecipesProps{
+    favRecipe : IRecipes
+}
+
+const FavouriteRecipes = ({favRecipe}: IFavRecipesProps ) => {
     
-    const {recipeData} = useContext<RecipeContext | undefined>(mainContext)
-  
+
     
     return ( 
-        <section className="my-10 p-5 flex flex-col gap-5">
-            <h2 className="text-blue text-3xl">Your Favourit recipes</h2>
-            <div className=" grid grid-cols-3 gap-2">
-                <RecipeList recipes={recipeData}/>
+        <Link to={`/details/${favRecipe.id}`} className="transition ease-in-out hover:shadow-2xl hover:opacity-80">
+            <div className="bg-white/50 pb-2 rounded-lg flex flex-col items-center gap-1">
+            <div className="h-30 w-30 overflow-hidden">
+                <img className="object-cover rounded-t-lg" src={favRecipe.image} alt={favRecipe.name} />
             </div>
-            
-        </section>
+            <h2 className="text-blue self-center text-[0.8rem] text-wrap">{favRecipe.name.slice(0,16)}</h2>
+         </div>
+        </Link>
      );
 }
  

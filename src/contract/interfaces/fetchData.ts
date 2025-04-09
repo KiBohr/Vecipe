@@ -5,12 +5,14 @@ export interface IData {
 }
 
 export interface IRecipes {
+  category_id?: string;
   id: string;
   name: string;
   servings: number;
   description: string;
+  instructions: string;
   image: string;
-  ingredients: IIngredients[];
+  ingredients?: IIngredients[];
 }
 
 export interface IIngredients {
