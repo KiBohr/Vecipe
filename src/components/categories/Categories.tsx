@@ -11,7 +11,7 @@ import { useParams } from "react-router-dom";
 
 const Categories = () => {
 
-    const {categoryParam} = useParams()
+    // const {categoryParam} = useParams()
 
 // hier muss ein fetch für die Categories hin
     const [categories, setCategories] = useState<ICategories[]>([])

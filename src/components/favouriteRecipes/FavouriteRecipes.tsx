@@ -7,9 +7,8 @@ interface IFavRecipesProps{
 
 const FavouriteRecipes = ({favRecipe}: IFavRecipesProps ) => {
     
-    
     return ( 
-        <Link to={`/details/${favRecipe.id}`} className="w-40 flex fley-col transition ease-in-out hover:shadow-2xl hover:opacity-80">
+        <Link to={`/details/${favRecipe.id}`} className="w-40 flex flex-col item-center fley-col transition ease-in-out hover:shadow-2xl hover:opacity-80">
             <div className="bg-white/50 pb-2 rounded-lg flex flex-col items-center gap-1">
             <div className="h-30 w-40 overflow-hidden">
                 <img className="object-cover rounded-t-lg" src={favRecipe.image} alt={favRecipe.name} />
@@ -19,5 +18,4 @@ const FavouriteRecipes = ({favRecipe}: IFavRecipesProps ) => {
         </Link>
      );
 }
- 
 export default FavouriteRecipes;
