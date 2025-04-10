@@ -1,7 +1,7 @@
 import { useParams} from "react-router-dom";
 import supabase from "../../utils/supabase";
 import { useEffect, useState } from "react";
-import { IIngredients, IRecipes } from "../../contract/interfaces/fetchData";
+import { IIngredients, IRecipes } from "../../contract/interfaces/IData";
 
 const RecipeDetail = () => {
 
@@ -12,7 +12,7 @@ const RecipeDetail = () => {
     useEffect(() => {
         const fetchData = async () => {
             const {data} = await supabase.from("recipes").select("*, ingredients(*)").eq("id", recipeParam)
-            setDetails(data?[0] as unknown as IRecipes)
+            setDetails(data[0] as unknown as IRecipes)
             // console.log("resp",resp.data[0])
         }
         fetchData()

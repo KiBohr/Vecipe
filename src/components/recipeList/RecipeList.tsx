@@ -1,4 +1,4 @@
-import { IRecipes } from "../../contract/interfaces/fetchData";
+import { IRecipes } from "../../contract/interfaces/IData";
 
 import RecipeItem from "../recipeItem/RecipeItem";
 

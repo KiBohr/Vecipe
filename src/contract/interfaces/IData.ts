@@ -1,4 +1,4 @@
-export interface IData {
+export interface ICategories {
   id: string;
   name: string;
   recipes: IRecipes[];

@@ -5,6 +5,7 @@ import Recipes from "./pages/recipes/Recipes"
 import About from "./pages/about/About"
 import RecipeDetail from "./pages/recipeDetail/RecipeDetail"
 import CreateRecipe from "./pages/createRecipe/CreateRecipe"
+import NotFound from "./pages/notFound/NotFound"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/details/:recipeParam" element={<RecipeDetail/>}/>
         <Route path="/create" element={<CreateRecipe/>}/>
+        <Route path="/notBaked" element={<NotFound/>}/>
         {/* <Route path="/profile" element={<Profile/>}/> */}
       </Route>
     )

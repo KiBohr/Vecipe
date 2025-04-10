@@ -1,14 +1,17 @@
+import { Link } from "react-router-dom";
+
 interface ISocialsProps{
-    path: string,
+    imgPath: string,
     desc: string
-    link?: string,
+    path?: string,
 }
 
-const Socials = ({path, desc, link}:ISocialsProps) => {
+const Socials = ({imgPath, desc, path}:ISocialsProps) => {
     return ( 
-        <a className="h-3 w-3 transistion ease-in-out hover:animate-pulse cursor-pointer" href={link}>
-            <img className="object-cover" src={path} alt={desc} />
-        </a>  
+        <Link to={path} className="h-3 w-3 transistion ease-in-out hover:animate-pulse cursor-pointer"> 
+            <img className="object-cover" src={imgPath} alt={desc} />
+        </Link>
+       
      );
 }
  

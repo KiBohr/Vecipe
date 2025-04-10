@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 interface IButtonProps{
     path: string,
     text:string,
+    styling?: string,
 }
 
-const Button = ({path,text}:IButtonProps) => {
+const Button = ({path,text,styling}:IButtonProps) => {
     return ( 
-       <Link className="transition ease-in-out hover:text-blue" to={path}>{text}</Link>
+       <Link className={styling} to={path}>{text}</Link>
      );
 }
  

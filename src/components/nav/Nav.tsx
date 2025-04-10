@@ -4,12 +4,12 @@ const Nav = () => {
     return ( 
     <nav className=" self-end text-sm flex gap-10 items-center justify-around">
         <div className="flex gap-2 items-end">
-            <Button text="Home" path="/"/>
-            <Button text="Recipes" path="/recipes"/>
-            <Button text="About" path="/about"/>
-            <Button text="Create" path="/create"/>
+            <Button styling="transition ease-in-out hover:text-blue" text="Home" path="/"/>
+            <Button styling="transition ease-in-out hover:text-blue" text="Recipes" path="/recipes"/>
+            <Button styling="transition ease-in-out hover:text-blue" text="About" path="/about"/>
+            <Button styling="transition ease-in-out hover:text-blue" text="Create" path="/create"/>
         </div>
-        <Button text="Login" path="/"/>
+        <Button text="Login" path="/notBaked"/>
 
     </nav> );
 }

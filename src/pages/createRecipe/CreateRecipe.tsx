@@ -7,7 +7,7 @@
 
 import {useEffect, useRef, useState } from "react";
 import supabase from "../../utils/supabase";
-import { IRecipes } from "../../contract/interfaces/fetchData";
+import { IRecipes } from "../../contract/interfaces/IData";
 import Banner from "../../components/banner/Banner";
 import { useNavigate } from "react-router-dom";
 

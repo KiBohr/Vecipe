@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 @theme {
     /* colors: */
       --color-brown:#594336;

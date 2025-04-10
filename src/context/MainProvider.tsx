@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import supabase from "../utils/supabase";
-import { IRecipes } from "../contract/interfaces/fetchData";
+import { IRecipes } from "../contract/interfaces/IData";
 
 // für den mainContext, damit der gute auch typisiert ist, weil muss so oder so
 export interface RecipeContext {
