@@ -6,6 +6,10 @@ import About from "./pages/about/About"
 import RecipeDetail from "./pages/recipeDetail/RecipeDetail"
 import CreateRecipe from "./pages/createRecipe/CreateRecipe"
 import NotFound from "./pages/notFound/NotFound"
+import Profile from "./pages/profile/Profile"
+import Login from "./pages/login/Login"
+import SignUp from "./pages/signUp/SignUp"
+import ProtectedRoute from "./components/protectedRoute/ProtectedRoute"
 
 
 function App() {
@@ -17,9 +21,21 @@ function App() {
         <Route path="/recipes" element={<Recipes/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/details/:recipeParam" element={<RecipeDetail/>}/>
-        <Route path="/create" element={<CreateRecipe/>}/>
-        <Route path="/notBaked" element={<NotFound/>}/>
-        {/* <Route path="/profile" element={<Profile/>}/> */}
+        <Route path="*" element={<NotFound/>}/>
+        
+        
+        <Route path="/create" element={ 
+          <ProtectedRoute>
+            <CreateRecipe/>
+          </ProtectedRoute> }/>
+
+        <Route path="/profile" element={ 
+          <ProtectedRoute>
+            <Profile/>
+          </ProtectedRoute> }/>
+
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
       </Route>
     )
   )

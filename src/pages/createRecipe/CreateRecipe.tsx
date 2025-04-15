@@ -81,7 +81,7 @@ const CreateRecipe = () => {
 
     return ( 
         <div>
-            <Banner text="CREATE" img="https://i.pinimg.com/736x/94/79/4f/94794fa9362fe63be36b4237224e5a03.jpg" imgDesc="a picture of a plate with food on it"/>
+            <Banner text="CREATE" img="https://i.pinimg.com/736x/94/79/4f/94794fa9362fe63be36b4237224e5a03.jpg"  imgDesc="a picture of a plate with food on it"/>
          
             <form className="p-5 text-blue bg-white/50 m-5 flex flex-col gap-2 my-20" >
                         

@@ -1,18 +1,29 @@
 import { createContext, useEffect, useState } from "react";
 import supabase from "../utils/supabase";
 import { IRecipes } from "../contract/interfaces/IData";
+import { IUser} from "../pages/profile/Profile";
 
 // für den mainContext, damit der gute auch typisiert ist, weil muss so oder so
 export interface RecipeContext {
-  recipeData: IRecipes[];
-  // Optional: setRecipeData?: (list: IRecipes[]) => void
+  recipeData: IRecipes[] | undefined,
+  user: IUser | undefined,
+  setUser: (value: IUser) => void,
+  isLoggedIn : boolean,
+  setIsLoggedIn : (value: boolean) => void,
 }
 
-export const mainContext = createContext<RecipeContext | undefined>(undefined);
+
+export const mainContext = createContext<RecipeContext | null>(null);
 
 const MainProvider = ({ children }: { children: React.ReactNode }) => {
   // useState hier
   const [recipeData, setRecipeData] = useState<IRecipes[]>([]);
+
+  const [isLoggedIn,setIsLoggedIn] = useState<boolean>(false)
+  console.log(isLoggedIn)
+
+  // der state für profil --> login
+  const [user, setUser] = useState<IUser>()
 
   useEffect(() => {
     const getData = async () => {
@@ -32,7 +43,7 @@ const MainProvider = ({ children }: { children: React.ReactNode }) => {
   // console.log(recipeData);
 
   return (
-    <mainContext.Provider value={{ recipeData }}>
+    <mainContext.Provider value={{ recipeData, user, setUser, isLoggedIn, setIsLoggedIn }}>
       {children}
     </mainContext.Provider>
   );
