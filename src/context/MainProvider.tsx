@@ -13,14 +13,14 @@ export interface RecipeContext {
 }
 
 
-export const mainContext = createContext<RecipeContext | null>(null);
+export const mainContext = createContext<RecipeContext | undefined >(undefined);
 
 const MainProvider = ({ children }: { children: React.ReactNode }) => {
   // useState hier
   const [recipeData, setRecipeData] = useState<IRecipes[]>([]);
 
   const [isLoggedIn,setIsLoggedIn] = useState<boolean>(false)
-  console.log(isLoggedIn)
+
 
   // der state für profil --> login
   const [user, setUser] = useState<IUser>()

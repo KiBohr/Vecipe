@@ -10,6 +10,7 @@ import Profile from "./pages/profile/Profile"
 import Login from "./pages/login/Login"
 import SignUp from "./pages/signUp/SignUp"
 import ProtectedRoute from "./components/protectedRoute/ProtectedRoute"
+import Categories from "./pages/categories/Categories"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/" element={<Layout/>}>
         <Route index element={<Home/>}/>
         <Route path="/recipes" element={<Recipes/>}/>
+        <Route path="/categories/:categoryParam" element={<Categories/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/details/:recipeParam" element={<RecipeDetail/>}/>
         <Route path="*" element={<NotFound/>}/>

@@ -16,28 +16,6 @@ const About = () => {
                 Build Community: Food brings people together! Vecipes is a space for sharing ideas, tips, and stories about the joys of vegan living.
                 Empower Home Cooks: With step-by-step instructions and expert tips, we strive to make vegan cooking accessible to everyone—no matter your skill level.
                 "/>
-
-            
-
-            {/* <div className="flex flex-col gap-5 p-5 bg-white/40 m-5 rounded-lg">
-            <div>
-               
-            
-            <div>
-                <h2 className="uppercase text-2xl mb-1">What We Aim to Do</h2>
-                <p className="mb-2">Our goal is simple: to show the world that vegan food can be every bit as satisfying and flavorful as traditional dishes. Through our website, we aim to:</p>
-                <p className="py-2 px-3 text-d-blue/80"> ◉ Provide Inspiration: From classic comfort foods reimagined as plant-based delights to innovative new creations, we want to spark your culinary creativity.
-                </p>
-                <p className="py-2 px-3 text-d-blue/80"> ◉ Promote Sustainability: By choosing plant-based options, you're contributing to a healthier planet. We're here to make that choice easier and more delicious..
-                </p>
-                <p className="py-2 px-3 text-d-blue/80"> ◉ Build Community: Food brings people together! Vecipes is a space for sharing ideas, tips, and stories about the joys of vegan living.
-                </p>
-                <p className="py-2 px-3 text-d-blue/80"> ◉ Empower Home Cooks: With step-by-step instructions and expert tips, we strive to make vegan cooking accessible to everyone—no matter your skill level.
-                </p>
-            </div>
-                
-            </div> */}
-            
         </article>
      );
 }
