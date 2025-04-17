@@ -1,3 +1,76 @@
+
+Salads:
+Mediterranean Chickpea Salad - b1f1e1a1-1111-4e1a-81b4-3e6d85a6cb16
+Zucchini Summer Salad - b2f2e2a2-2222-4e2a-81b4-3e6d85a6cb16
+Carrot Raisin Salad - b3f3e3a3-3333-4e3a-81b4-3e6d85a6cb16
+Potato Olive Salad - b4f4e4a4-4444-4e4a-81b4-3e6d85a6cb16
+Barley Veggie Salad - b5f5e5a5-5555-4e5a-81b4-3e6d85a6cb16
+
+Breakfast:
+Vegan Banana Pancakes - c1f1e1a1-1111-4e1a-81b4-3e6d85a6cb17
+Tofu Scramble - c2f2e2a2-2222-4e2a-81b4-3e6d85a6cb17
+Oatmeal with Fruits - c3f3e3a3-3333-4e3a-81b4-3e6d85a6cb17
+Vegan Breakfast Burrito - c4f4e4a4-4444-4e4a-81b4-3e6d85a6cb17
+Green Bowl c5f5e5a5-5555-4e5a-81b4-3e6d85a6cb17
+
+Appetizers (category_id: 404fe179-b3a3-4d77-a669-68965cf376c5)
+Spinach and Artichoke Dip - d1a2b3c4-1111-4d77-a669-68965cf376c5
+Bruschetta - d2a2b3c4-2222-4d77-a669-68965cf376c5
+Spring Rolls - d3a2b3c4-3333-4d77-a669-68965cf376c5
+Guacamole with Chips - d4a2b3c4-4444-4d77-a669-68965cf376c5
+Crispy Cauliflower Bites - d5a2b3c4-5555-4d77-a669-68965cf376c5
+
+Sauces and Condiments (category_id: 5bbf3e59-3384-4601-bfca-6555314e1866)
+Tomato Salsa - e1b2c3d4-6666-4d77-a669-68965cf376c6
+Hummus - e2b2c3d4-7777-4d77-a669-68965cf376c6
+BBQ Sauce - e3b2c3d4-8888-4d77-a669-68965cf376c6
+Pesto - e4b2c3d4-9999-4d77-a669-68965cf376c6
+Sweet Chili Sauce - e5b2c3d4-1010-4d77-a669-68965cf376c6
+
+Beverages (category_id: 5ed3f4b0-54d8-4aaf-a55a-b768c3bf440e)
+Lemonade - 8a6f5e12-3c4b-4c6a-bf6e-0e8e0d6e9a1e
+Iced Hibiscus Tea - c7e1d9b2-4a2f-4f7e-92b3-cf3e7e8b8c9a
+Mango Lassi - d2b9a0f3-7e4c-4b2a-9e2c-1e8f7c6b5d4e
+Cucumber Mint Water - e3f7c8a1-2b4e-4c6d-8f0a-1b2e3d4c5f6a
+Berry Smoothie - f4a2b3c4-5d6e-4f7a-8b9c-0e1d2c3b4a5f
+
+Sides (category_id: 837ee4d7-8ad1-447c-9546-04f8a4633d8f)
+Garlic Bread - b2e3c4d5-6f7a-4b8c-9d0e-1f2a3b4c5d6e
+Roasted Vegetables - c3d4e5f6-7a8b-9c0d-1e2f-3a4b5c6d7e8f
+Sweet Potato Fries - d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a
+Coleslaw - e5f6a7b8-9c0d-1e2f-3a4b-5c6d7e8f9b0c
+Grilled Corn on the Cob - f6a7b8c9-0d1e-4f2a-3b4c-5d6e7f8a9b0c
+
+Soups (category_id: 8c86d0b0-2af3-4000-a5f5-4943faaaed80)
+Butternut Squash Soup - a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d
+Spicy Lentil Soup - b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e
+Roasted Red Pepper Soup - c3d4e5f6-7a8b-9c0d-1e2f-3a4b5c6d7e8f
+Potato Leek Soup - d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a
+Tomato Basil Soup - e5f6a7b8-9c0d-1e2f-3a4b-5c6d7e8f9b0c
+
+Snacks (category_id: a80e47d8-d395-4388-83a1-4523bcd59e05)
+No-Bake Peanut Butter Cookies - d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a
+Popcorn - e3f4a5b6-c7d8-4e9a-0b1c-2d3e4f5a6b7c
+Ants on a Log - f3a4b5c6-d7e8-4f9a-0b1c-2d3e4f5a6b7c
+Pumpkin Seeds - a4b5c6d7-e8f9-4a0b-1c2d-3e4f5a6b7c8d
+Veggie Chips - b5c6d7e8-f9a0-4b1c-2d3e-4f5a6b7c8d9e
+
+Desserts (category_id: e51a5475-ecd1-433d-8262-eb6878ad3a6d)
+Chocolate Avocado Mousse - a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d
+Apple Crisp - b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e
+Berry Sorbet - c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f
+Oatmeal Raisin Cookies - d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a
+Banana Ice Cream - e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b
+
+Main Course (category_id: ea91e7cf-c31b-49c6-8a7d-867e8c1502ee)
+Stuffed Eggplant - a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d
+Chickpea Stew - b3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e
+Tofu Stir-fry - c4d5e6f7-a8b9-4c0d-1e2f-3a4b5c6d7e8f
+Quinoa Bowl with Roasted Vegetables - d5e6f7a8-b9c0-4d1e-2f3a-4b5c6d7e8f9a
+Mushroom Risotto - e6f7a8b9-c0d1-4e2f-3a4b-5c6d7e8f9a0b
+
+
+
 name,description,servings,instructions,category_id
 "Arugula Salad with Pears and Walnuts","- Fresh arugula base\n- Sweet pears and crunchy walnuts\n- Light vinaigrette dressing",2,"1. Wash and dry the arugula.\n2. Slice pears thinly and chop walnuts.\n3. Toss together with vinaigrette.","2995757b-297b-46d0-81b4-3e6d85a6cb16"
 "Curry Roasted Cauliflower Salad","- Spiced roasted cauliflower\n- Mixed greens\n- Tangy curry dressing",4,"1. Preheat oven to 400°F.\n2. Toss cauliflower florets with curry powder and roast.\n3. Mix greens, roasted cauliflower, and dressing.","2995757b-297b-46d0-81b4-3e6d85a6cb16"

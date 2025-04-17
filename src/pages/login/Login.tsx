@@ -35,7 +35,7 @@ const Login = () => {
     <section>
         <Banner img="https://i.pinimg.com/736x/99/d7/6d/99d76d535fec9857c4c8feeaea8ee5ce.jpg" text="LOGIN" imgDesc="plate with tofu and vegetables"/>
 
-        <form onSubmit={handleLogin} className="text-blue bg-white/70 mx-5 md:mx-40 md:text-xl md:gap-4 lg:mx-60 lg:text-2xl lg:gap-6 lg:items-center my-20 p-5 rounded-lg flex flex-col gap-2">
+        <form onSubmit={handleLogin} className="text-blue bg-white/70 mx-5  md:mx-40 md:text-xl md:gap-4 lg:mx-60 lg:text-2xl lg:gap-6 lg:items-center my-35 p-5 rounded-lg flex flex-col gap-2">
             <div className="flex gap-2 items-center md:gap-4 lg:gap-6">
                 <label htmlFor="email">Email</label>
                 <input className=" animate-pulse bg-lilac/50 p-1 rounded-lg text-d-blue text-sm" type="text" name="email"  ref={emailRef} />

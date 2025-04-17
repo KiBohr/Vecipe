@@ -9,7 +9,8 @@ export interface IUser {
     password: string,
     firstname: string,
     lastname: string
-    email: string
+    email: string,
+    img_url: string | null | undefined,
 }
 
 const Profile = () => {
@@ -63,8 +64,13 @@ const Profile = () => {
             {profile ? (
             <div>
                 <Banner img="https://i.pinimg.com/736x/b7/d4/c9/b7d4c9dcfe092824c12d78368b77ff17.jpg" imgDesc="different vegetables on a white surface" text="Profile"/>
-                <div className="flex flex-col gap-2 mx-5 mt-10 mb-30 p-5 rounded-lg bg-white/50 justify-center">
+                <div className="flex flex-col gap-2 mx-5 mt-10 mb-30 p-5 rounded-lg bg-white/50 items-center justify-center">
+
+                <div className="h-40 w-40 rounded-full">
+                         <img src={profile.img_url} alt="" />
+                    </div>
                 <div className="flex gap-1 items-center" onDoubleClick={handleDoubleClick}>
+                    
                     <p className="text-xl">Username:</p>
                     {
                        isEditing ? (

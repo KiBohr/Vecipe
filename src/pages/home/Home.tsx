@@ -35,7 +35,7 @@ const Home = () => {
                  <h2 className="text-blue text-3xl upper ">Your Favourits</h2>
                  
                 <div className="grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-10">
-                {favRecipe?.slice(12,16).map((favRecipe: IRecipes)=>{
+                {favRecipe?.slice(16,20).map((favRecipe: IRecipes)=>{
                 return(
                     <div key={crypto.randomUUID()}>
                         <FavouriteRecipes favRecipe={favRecipe}/>
