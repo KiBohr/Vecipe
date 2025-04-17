@@ -27,7 +27,7 @@ const Categories = () => {
 
     useEffect(() => {
         fetchCategoryId()
-    },[])
+    },[categoryParam])
     console.log(recipeCIds)
 
 
