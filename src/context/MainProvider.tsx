@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import supabase from "../utils/supabase";
 import { IRecipes } from "../contract/interfaces/IData";
 import { IUser} from "../pages/profile/Profile";
+import Loading from "../components/loading/Loading";
 
 // für den mainContext, damit der gute auch typisiert ist, weil muss so oder so
 export interface RecipeContext {
@@ -10,6 +11,8 @@ export interface RecipeContext {
   setUser: (value: IUser) => void,
   isLoggedIn : boolean,
   setIsLoggedIn : (value: boolean) => void,
+  loading : boolean,
+  setLoading: (value: boolean) => void,
 }
 
 
@@ -24,6 +27,7 @@ const MainProvider = ({ children }: { children: React.ReactNode }) => {
 
   // der state für profil --> login
   const [user, setUser] = useState<IUser>()
+  const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
     const getData = async () => {
@@ -32,18 +36,22 @@ const MainProvider = ({ children }: { children: React.ReactNode }) => {
         // console.log(resp)
         if (resp.data) {
           setRecipeData(resp.data as IRecipes[]);
+          setLoading(false)
         }
       } catch (error) {
         console.warn(`Fetching Error: ${error}`); // Fehler korrekt ausgeben
+      }finally{
+        setLoading(false)
       }
     };
     getData();
   }, []);
 
+  
   // console.log(recipeData);
 
   return (
-    <mainContext.Provider value={{ recipeData, user, setUser, isLoggedIn, setIsLoggedIn }}>
+    <mainContext.Provider value={{ recipeData, user, setUser, isLoggedIn, setIsLoggedIn, loading, setLoading }}>
       {children}
     </mainContext.Provider>
   );

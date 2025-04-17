@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import supabase from "../../utils/supabase";
 import NotFound from "../notFound/NotFound";
 import Banner from "../../components/banner/Banner";
+import Button from "../../components/button/Button";
 
 export interface IUser {
     id: number,
@@ -66,8 +67,10 @@ const Profile = () => {
                 <Banner img="https://i.pinimg.com/736x/b7/d4/c9/b7d4c9dcfe092824c12d78368b77ff17.jpg" imgDesc="different vegetables on a white surface" text="Profile"/>
                 <div className="flex flex-col gap-2 mx-5 mt-10 mb-30 p-5 rounded-lg bg-white/50 items-center justify-center">
 
-                <div className="h-40 w-40 rounded-full">
-                         <img src={profile.img_url} alt="" />
+                <div className="h-40 w-40">
+                    {/* The src prop for <img> expects only string | undefined (not null).
+                    Using ?? undefined ensures that null is converted to undefined, resolving the TypeScript error. */}
+                         <img className="rounded-full transition ease-in-out hover:opacity-75 cursor-pointer" src={profile.img_url ?? undefined} alt="" />
                     </div>
                 <div className="flex gap-1 items-center" onDoubleClick={handleDoubleClick}>
                     
@@ -80,21 +83,36 @@ const Profile = () => {
                        value={newUsername}
                        onChange={(e)=> setNewUsername(e.target.value)}
                        /> ) : (
-                       <p className="text-xl font-light">
+                       <p className="text-2xl font-light text-blue/70 transition ease-in-out hover:opacity-50 hover:bg-lilac/40 hover:rounded-lg hover:px-1">
                         {profile.username}
                        </p>
                        )
                     }
                 </div>
-                <p className="text-lg">Firstname: {profile.firstname}</p>
-                <p className="text-lg">Lastname: {profile.lastname}</p>
+                <div className="flex gap-5 items-center">
+                    <div className="flex gap-2 items-center">
+                        <p>firstname:</p>
+                          <p className="text-lg text-blue/60">{profile.firstname}</p>
+                    </div>
+
+                    <div className="flex gap-2 items-center">
+                        <p>lastname:</p>
+                        <p className="text-lg text-blue/60">{profile.lastname}</p>
+                    </div>
+                </div>
+                <div className="flex gap-2 items-center">
+                    <p>email:</p>
+                    <p className="text-lg text-blue/60">{profile.email}</p>
+                </div>
+
+                {isEditing &&
+                    <button className=" cursor-pointer self-center text-xl border-2 px-3 text-center rounded-lg transition ease-in-out hover:text-brown/70 hover:border-brown/70" onClick={handleSave}>save</button>
+                }
 
                 
                 </div>
                 
-                {isEditing &&
-                    <button onClick={handleSave}>save</button>
-                }
+                
                
             </div>
             

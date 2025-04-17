@@ -37,7 +37,7 @@ const Categories = () => {
             <Banner text="RECIPES"
              img="https://i.pinimg.com/736x/13/3f/19/133f19f075a1d1e2b9e8e21b579ff7be.jpg" imgDesc="picture of a platter with food" />
              <CategoryButtons/>
-             <div className="grid grid-cols-2 p-5">
+             <div className="grid grid-cols-2 gap-5 p-5 justify-items-center">
                 {recipeCIds.map((recipe) => {
                 return(
                         <RecipeItem item={recipe}/>

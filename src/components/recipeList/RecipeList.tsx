@@ -1,4 +1,5 @@
 import { IRecipes } from "../../contract/interfaces/IData";
+import Loading from "../loading/Loading";
 
 import RecipeItem from "../recipeItem/RecipeItem";
 
@@ -9,7 +10,7 @@ interface IRecipeProps {
 const RecipeList = ({recipes} : IRecipeProps) => {
 
     if(!recipes){
-        return <div>nö</div>
+        return <Loading/>
     }
    
     // console.log(recipes);
