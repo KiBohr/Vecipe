@@ -3,19 +3,11 @@ import { mainContext} from "../../context/MainProvider";
 import RecipeList from "../../components/recipeList/RecipeList";
 import Banner from "../../components/banner/Banner";
 import CategoryButtons from "../../components/categoryButtons/CategoryButtons";
-import { IRecipes } from "../../contract/interfaces/IData";
-
-interface IRecipesProps{
-    recipeData: IRecipes,
-    loading: boolean,
-}
 
 const Recipes = () => {
-    const {recipeData} = useContext<IRecipesProps>(mainContext)
+    const {recipeData} = useContext(mainContext)!
 
-   
 
-    
     return ( 
         <article className="flex flex-col items-center">
             <Banner text="RECIPES" img="https://i.pinimg.com/736x/13/3f/19/133f19f075a1d1e2b9e8e21b579ff7be.jpg" imgDesc="picture of a platter with food" />
@@ -27,5 +19,4 @@ const Recipes = () => {
         </article>
      );
 }
- 
 export default Recipes;

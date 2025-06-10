@@ -2,11 +2,11 @@ import { createContext, useEffect, useState } from "react";
 import supabase from "../utils/supabase";
 import { IRecipes } from "../contract/interfaces/IData";
 import { IUser} from "../pages/profile/Profile";
-import Loading from "../components/loading/Loading";
+
 
 // für den mainContext, damit der gute auch typisiert ist, weil muss so oder so
 export interface RecipeContext {
-  recipeData: IRecipes[] | undefined,
+  recipeData: IRecipes[] | null,
   user: IUser | undefined,
   setUser: (value: IUser) => void,
   isLoggedIn : boolean,
@@ -16,11 +16,11 @@ export interface RecipeContext {
 }
 
 
-export const mainContext = createContext<RecipeContext | undefined >(undefined);
+export const mainContext = createContext<RecipeContext| undefined >(undefined);
 
 const MainProvider = ({ children }: { children: React.ReactNode }) => {
   // useState hier
-  const [recipeData, setRecipeData] = useState<IRecipes[]>([]);
+  const [recipeData, setRecipeData] = useState<IRecipes[] | null>(null);
 
   const [isLoggedIn,setIsLoggedIn] = useState<boolean>(false)
 

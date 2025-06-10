@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 import supabase from "../../utils/supabase";
-import NotFound from "../notFound/NotFound";
 import Banner from "../../components/banner/Banner";
-import Button from "../../components/button/Button";
+import Loading from "../../components/loading/Loading";
 
 export interface IUser {
     id: number,
@@ -19,7 +18,10 @@ const Profile = () => {
     // usestates
     const [profile, setProfile] = useState<IUser | null>()
     const [isEditing,setIsEditing] = useState<boolean>(false)
-    const [newUsername, setNewUsername] = useState<string>("") 
+    const [newUsername, setNewUsername] = useState<string>("")
+    const [newFirstName, setNewFirsttName] = useState<string>("")
+    const [newLastName, setNewLastName] = useState<string>("")
+    const [newEmail, setNewEmail] = useState<string>("")
 
     const fetchProfileData = async () => {
         const {data: profileData} = await supabase.auth.getUser()
@@ -36,11 +38,15 @@ const Profile = () => {
 
     useEffect(() => {
         fetchProfileData()
-    },[])
+    },[handleDoubleClick])
 
     function handleDoubleClick(){
         if(profile){
             setNewUsername(profile.username)
+            // setNewFirsttName(profile.firstname)
+            // setNewLastName(profile.lastname)
+            setNewEmail(profile.email)
+
             setIsEditing(true)
         }
     }
@@ -48,16 +54,30 @@ const Profile = () => {
     async function handleSave(){
         if(profile && newUsername != profile.username){
             const {data: user} = await supabase.auth.getUser()
-
-            const {error} = await supabase.from("profiles").update({username : newUsername}).eq("id", user?.user?.id)
-            if(error){
-                console.error("Saving didn´t work", error)
+            // abfrage für username
+            const {error: usernameError} = await supabase.from("profiles").update({username : newUsername}).eq("id", user?.user?.id)
+            
+            if(user){
+                console.error("Saving username didn´t work", usernameError)
             }else{
                 fetchProfileData()
             }
-        }
-        setIsEditing(false)
+       
     }
+    if(profile && newEmail != profile.email){
+        const {data: user} = await supabase.auth.getUser()
+        // abfrage für username
+        // abfrage für email
+        const {error: emailError} = await supabase.from("profiles").update({email: newEmail}).eq("id", user?.user?.id)
+        
+        if(user){
+            console.error("Saving email didn´t work", emailError)
+        }else{
+            fetchProfileData()
+        }
+    }
+    setIsEditing(false)
+}
 
     
     return ( 
@@ -77,7 +97,7 @@ const Profile = () => {
                     <p className="text-xl">Username:</p>
                     {
                        isEditing ? (
-                       <input 
+                       <input className=""
                        type="text"
                        placeholder='change your username'
                        value={newUsername}
@@ -100,9 +120,24 @@ const Profile = () => {
                         <p className="text-lg text-blue/60">{profile.lastname}</p>
                     </div>
                 </div>
-                <div className="flex gap-2 items-center">
-                    <p>email:</p>
-                    <p className="text-lg text-blue/60">{profile.email}</p>
+                <div className="flex gap-2 items-center" onDoubleClick={handleDoubleClick}>
+                <p className="text-lg">email:</p>
+                    {
+                       isEditing ? (
+                       <input 
+                       type="text"
+                       placeholder='change your email'
+                       value={newEmail}
+                       onChange={(e)=> setNewEmail(e.target.value)}
+                       /> ) : (
+                       <p className="text-xl font-light text-blue/70 transition ease-in-out hover:opacity-50 hover:bg-lilac/40 hover:rounded-lg hover:px-1">
+                        {profile.email}
+                       </p>
+                       )
+}
+                    
+                    {/* // <p>email:</p>
+                    // <p className="text-lg text-blue/60">{profile.email}</p> */}
                 </div>
 
                 {isEditing &&
@@ -116,7 +151,7 @@ const Profile = () => {
                
             </div>
             
-        ) : <NotFound/>}
+        ) : <Loading/>}
             
         </div>
      );

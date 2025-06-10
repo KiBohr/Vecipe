@@ -33,7 +33,7 @@ const CategoryButtons = () => {
         <article className="carousel flex items-center justify-end px-5 gap-4 mb-5 bg-blue/50 py-[0.5rem] w-full">
             {categories.map((category : ICategories) => {
                 return(
-                      <Button styling=" carousel-item text-sm md:text-base lg:text-lg text-butter/80 transition ease-in-out hover:text-brown/80" text={category.name} path={`/categories/${category.id}`}/>
+                      <Button key={category.id} styling=" carousel-item text-sm md:text-base lg:text-lg text-butter/80 transition ease-in-out hover:text-brown/80" text={category.name} path={`/categories/${category.id}`}/>
                 )
             })}
         </article>

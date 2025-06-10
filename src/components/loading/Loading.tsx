@@ -1,6 +1,6 @@
 const Loading = () => {
     return ( 
-        <div className="w-20 h-20 animate-spin">
+        <div className="w-10 h-10 animate-spin ">
             <img className="object-cover" src="/src/assets/img/Tomate-blue.png" alt="a blue tomato" />
         </div>
      );

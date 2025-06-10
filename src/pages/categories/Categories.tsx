@@ -5,12 +5,11 @@ import supabase from "../../utils/supabase";
 import { IRecipes } from "../../contract/interfaces/IData";
 import RecipeItem from "../../components/recipeItem/RecipeItem";
 import Banner from "../../components/banner/Banner";
+import Loading from "../../components/loading/Loading";
 
 const Categories = () => {
 
     const {categoryParam} = useParams()
-
-    // ich muss hier noch einen fetch von den recipes machen, und dann über die category_id auf die categorys zugreifen
 
     const [recipeCIds, setRecipeCIds] = useState<IRecipes[]>([])
 
@@ -28,8 +27,7 @@ const Categories = () => {
     useEffect(() => {
         fetchCategoryId()
     },[categoryParam])
-    console.log(recipeCIds)
-
+    // console.log(recipeCIds)
 
 
     return ( 
@@ -39,9 +37,14 @@ const Categories = () => {
              <CategoryButtons/>
              <div className="grid grid-cols-2 gap-5 p-5 justify-items-center">
                 {recipeCIds.map((recipe) => {
-                return(
-                        <RecipeItem item={recipe}/>
-                )
+                    if(recipe){
+                        return(
+                        <RecipeItem key={recipe.id} item={recipe}/>
+                    )
+                    }else{
+                        return <Loading/>
+                    }
+                
             })}
              </div>
         </article>

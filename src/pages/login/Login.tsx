@@ -5,8 +5,6 @@ import Banner from "../../components/banner/Banner";
 
 const Login = () => {
 
-    []
-   
     // zum direkten navigieren zum profil
     const navigate = useNavigate()
     //  um die daten aus den inputfeldern zu holen
