@@ -1,4 +1,8 @@
-# React + TypeScript + Vite
+# Vecipes - a fullstack project
+
+[vecipes_screenrecord.webm](https://github.com/user-attachments/assets/ce6dd8db-33a6-4a4d-88b2-77419d53f0ef)
+
+![vecipes_screenshot](https://github.com/user-attachments/assets/b72a7b91-33d6-44e2-9f2d-e872bcbcec71)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
