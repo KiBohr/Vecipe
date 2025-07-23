@@ -14,7 +14,7 @@ const Recipes = () => {
             <CategoryButtons/>
             <div className=" grid grid-cols-2 gap-6 p-5 md:grid-cols-4 lg:grid-cols-6 lg:gap-10">
             
-                <RecipeList recipes={recipeData}/>
+                <RecipeList recipes={recipeData || []}/>
             </div>
         </article>
      );

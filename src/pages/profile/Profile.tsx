@@ -19,8 +19,8 @@ const Profile = () => {
     const [profile, setProfile] = useState<IUser | null>()
     const [isEditing,setIsEditing] = useState<boolean>(false)
     const [newUsername, setNewUsername] = useState<string>("")
-    const [newFirstName, setNewFirsttName] = useState<string>("")
-    const [newLastName, setNewLastName] = useState<string>("")
+    // const [newFirstName, setNewFirsttName] = useState<string>("")
+    // const [newLastName, setNewLastName] = useState<string>("")
     const [newEmail, setNewEmail] = useState<string>("")
 
     const fetchProfileData = async () => {
