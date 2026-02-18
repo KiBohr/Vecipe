@@ -7,6 +7,7 @@ import supabase from "../../utils/supabase";
 import Button from "../button/Button";
 
 
+
 const CategoryButtons = () => {
 
     // const {categoryParam} = useParams()
@@ -30,13 +31,16 @@ const CategoryButtons = () => {
     },[])
     
     return ( 
-        <article className="carousel flex items-center justify-end px-5 gap-4 mb-5 bg-blue/50 py-[0.5rem] w-full">
-            {categories.map((category : ICategories) => {
-                return(
-                      <Button key={category.id} styling=" carousel-item text-sm md:text-base lg:text-lg text-butter/80 transition ease-in-out hover:text-brown/80" text={category.name} path={`/categories/${category.id}`}/>
-                )
-            })}
-        </article>
+        <div className="carousel flex items-center justify-center gap-2 w-full overflow-x-auto space-x-4 bg-blue/60 py-2 mb-5">
+        {categories.map((category) => (
+          <Button
+            key={category.id}
+            styling="carousel-item carousel-center flex-shrink-0  text-sm md:text-base lg:text-lg text-butter/80 transition ease-in-out hover:text-brown/80"
+            text={category.name}
+            path={`/categories/${category.id}`}
+          />
+        ))}
+      </div>
      );
 }
  
